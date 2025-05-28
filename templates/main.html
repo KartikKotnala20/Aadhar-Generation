@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myAadhaar-Unique Identification Authority of India</title>
+  <link rel="shortcut icon" href="{% static '/root_assets/Aadhaar_Logo-e1498722360783-770x396.avif' %}"
+    type="image/x-icon">
+  <link rel="stylesheet" href="{% static '/root_css/footer.css' %}">
+  <link rel="stylesheet" href="{% static '/root_css/nav.css' %}">
+  <link rel="stylesheet" href="{% static '/css/index.css' %}">
+  <link rel="stylesheet" href="{% static '/css/hero.css' %}">
+  <link rel="stylesheet" href="{% static '/css/display.css' %}">
+</head>
+
+<body>
+  {% include "nav.html" %}
+  {% block content %}
+
+  {% endblock content %}
+</body>
+
+</html>
+
+

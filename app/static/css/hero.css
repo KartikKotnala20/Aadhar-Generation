@@ -1,0 +1,78 @@
+.hero_sec_main_container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/static/assets/indian-village-family-poor-villagers-generative-ai_849906-8844.avif");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero_sec_main_container::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #020d3f, #1baedb9a);
+  z-index: 1;
+  position: absolute;
+}
+
+.hero_content_container {
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.left_hero {
+  height: inherit;
+  width: 50%;
+  color: #ffff;
+}
+
+.left_hero > p {
+  font-size: 4rem;
+  padding-bottom: 25px;
+  line-height: 0.9em;
+}
+
+.left_hero article p {
+  font-size: 1rem;
+}
+
+.right_hero {
+  height: inherit;
+  height: 380px;
+  width: 330px;
+  background-color: #fff;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right_hero img {
+  width: 35%;
+}
+
+.right_hero button {
+  cursor: pointer;
+  border: none;
+  padding: 15px 35px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  background: linear-gradient(to right, #01064b, #1bafdb);
+}
+
+.right_hero span{
+  font-size: smaller;
+}

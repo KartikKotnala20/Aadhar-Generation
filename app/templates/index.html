@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% block content %}
+<section class="af_sec_main_container all_form"><br><br><br><br><br><br><br><br><br><br>
+  <h1>AADHAR FORM</h1>
+  <form action="" method="post" enctype="multipart/form-data" class="flex">
+    {% csrf_token %}
+    {% for field in form %}
+    <div>
+      <label for="{{field.id_for_label}}">{{field.label}}</label>
+      {{field}}
+    </div>
+    {% endfor %}
+    <button type="submit">GENERATE</button>
+  </form>
+</section>
+{% endblock content %}

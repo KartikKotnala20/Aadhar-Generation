@@ -1,0 +1,113 @@
+{% extends "main.html" %}
+{% block content %}
+{% load static %}
+<br><br><br><br><br><br><br><br><br><br>
+<div class="aadhar-page">
+  <!-- Front Side -->
+  <div class="aadhar-card">
+    <div class="header">
+      <img src="../static/assets/ashok-pillar-symbol-icon-black-600nw-2422191035.jpg" alt="Emblem">
+      <img src="../static/assets/aadhaar.svg" alt="Aadhaar Logo">
+    </div>
+    <div class="header-text">
+      <p class="lang">ଭାରତ ସରକାର</p>
+      <p class="eng">Government of India</p>
+    </div>
+    <div class="header-text-green">
+      <p class="lang-green">ଭାରତ ସରକାର</p>
+      <p class="eng-green">Unique Identification Authority of India</p>
+    </div>
+
+    <div class="section">
+      <strong>Enrolment No.:</strong> 0656/00183/00661<br><br>
+      <strong>To:</strong><br>
+      {{data.first_name}} {{data.last_name}}<br>
+      {{data.father_name}}<br>
+      {{data.mother_name}}<br>
+      {{data.address}}<br>
+      {{data.email}}<br>
+      {{data.state}}<br>
+      {{data.pin_code}}<br>
+    </div>
+
+    <img class="barcode" src="../static/assets/Qr-code.jpg" alt="">
+    <div class="section1">
+      <strong>Your Aadhaar No.:</strong><br>
+      <div class="highlight">{{data.aadhar_num}}</div>
+      VID: 9191 9755 5507 9776
+    </div>
+    <br>
+    <div class="bottom-strip">
+      <div class="header1">
+        <img src="../static/assets/ashok-pillar-symbol-icon-black-600nw-2422191035.jpg" alt="Emblem">
+        <img src="../static/assets/IMG_20250419_225739.jpg" alt="">
+        <img src="../static/assets/aadhaar.svg" alt="Aadhaar Logo">
+      </div>
+      <div class="info-grid">
+        <img class="photo" src="{{data.photo.url}}" alt="">
+        <div>
+          Name: {{data.first_name}} {{data.last_name}}<br>
+          DOB: {{data.dob}}<br>
+          Gender: {{data.gender}}
+        </div>
+      </div>
+      <p id="p">
+        <b>Aadhaar is proof of identity, not of citizenship or date of birth.</b> It should be used with verification (online authentication or QR code scan).
+      </p>
+    </div>
+    <div class="highlight1"><h3>7011   7673   4558</h3></div>
+  </div>
+  
+
+  <!-- Back Side -->
+  <div class="aadhar-card">
+    <div class="header">
+      <img src="../static/assets/ashok-pillar-symbol-icon-black-600nw-2422191035.jpg" alt="Emblem">
+      <img src="../static/assets/aadhaar.svg" alt="Aadhaar Logo">
+    </div>
+    <div class="section">
+      <h4 style="color:red;">ସୂଚନା / INFORMATION</h4>
+      <br>
+      <ul class="info-list">
+        <li>ଆଧାର ହେଉଛି ପରିଚୟର ପ୍ରମାଣ, ନାଗରିକତା କିମ୍ବା ଉନ୍ମ ତାରିଖର ନୁହେଁ I ଜନ୍ମ ତାରିଖ ଆଧାର ନମ୍ବରଧାରୀଙ୍କ ଦ୍ବାରା ଦଖଲ କରାଯାଜୟଦା ନିୟମାବଳୀରେ ଉଲ୍ଲେଖ କରାଯାଇଥୁନା ଜନ୍ମ ତାରିଖ ଡକ୍ୟୁମେଣ୍ଟର ପ୍ରମାଣ ଦ୍ବାରା ସମର୍ଥିତ ସୂଚତୀ ଉପରେ ଆଧାରିବା
+        </li>
+        <li>ଏହି ଆଧାର ଚିଠି ସୁଆଇଡିଏଆର ଦ୍ବାରା ନିୟୁକ୍ତ ପ୍ରମାଣୀକରଣ ଏଜେନ୍ତି କିମ୍ବା mAadhaar କିମ୍ବା ଆଧାର ବ୍ୟୁଆର ସ୍କାନର ଆପ ଷ୍ଟୋରରେ ଉପଲବ୍ଧ କିମ୍ବା www.uidai.gov.in ରେ ଉପଲବ୍ଧ ସୁରକ୍ଷିତ କ୍ୟୁଆର କୋଡ଼ ରିଜର ଆପ ବ୍ୟବହାର କରି ନୂଆର କୋଡ଼ ଜ୍ଞାନ ହାଲି ଅନଲାଇନ୍ ପ୍ରମାଣୀକରଣ ମାଧ୍ୟମରେ
+        </li>
+        <li>ପାଞ୍ଚ କରାୟିବା ଭିଚିତ୍ର ଆଧାର ଗୁଟରୁ ଏବଂ ସୁରକ୍ଷିତ |
+        </li>
+        <li>ପରିଚୟ ଏବଂ ଠିକଣାକୁ ସମର୍ଥନ କରିବାକୁ କନ୍ୟୁମେଣ୍ଟଗୁଡିକ ଆଧାରରେ
+        </li>
+        <li>ନାମଲେଖା ତାରିଖ ଠାରୁ ପ୍ରତି 10 ବର୍ଷ ପରେ ଆଧାରରେ ଅପଡେହ ହେବା କଳିବ ।
+        </li>
+        <li>ଆଧାର ବ୍ୟବହାର ନକରିବାବେଳେ ସୁରକ୍ଷା ନିଶ୍ଚିତ କରିବାକୁ ଲଗ୍ନ / ଅନଲବ୍ଧ
+        </li>
+        <li>ଆଧାର / ବା ଯୋନେ ହିଜ୍‌ର ଫିଟର ବ୍ୟବହାର କରନ୍ତୁ |
+        </li>
+        <li>ଆଧାର ଖୋଜୁଥୁବା ସଂସ୍ଥା ସଗତି ମାରିବାକୁ ଦାଣ
+        </li>
+        <li>Aadhaar is proof of identity, not of citizenship or DOB.</li>
+        <li>This letter should be verified via QR code / UIDAI website.</li>
+        <li>mAadhaar app can be used to scan the code.</li>
+        <li>Update address every 10 years.</li>
+        <li>Use Aadhaar for Government/Non-Government services.</li>
+        <li>Keep your mobile number linked.</li>
+        <li>Use Lock/Unlock feature for security.</li>
+        <li>Entities seeking Aadhaar are obligated toseek consent</li>
+      </ul>
+    </div>
+    <div class="header1">
+      <img src="../static/assets/ashok-pillar-symbol-icon-black-600nw-2422191035.jpg" alt="Emblem">
+      <img src="../static/assets/IMG_20250419_225739.jpg" alt="">
+      <img src="../static/assets/aadhaar.svg" alt="Aadhaar Logo">
+    </div>
+    <div class="section">
+      <strong id="add">Address:{{data.address}}</strong>
+    </div>
+    <img class="barcode1" src="../static/assets/Qr-code.jpg" alt="">
+    <div class="highlight2"><b>7011 7673 4558</b> <br>
+      VID: 9191 9755 5507 9776
+    </div>
+  </div>
+</div>
+{% endblock content %}
+

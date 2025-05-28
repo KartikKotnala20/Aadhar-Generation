@@ -1,0 +1,32 @@
+<header class="nav_main_container">
+  {% load static %}
+  <nav class="nav_container1 flex">
+    <a href="{% url 'hero' %}"><img
+        src="{% static '/root_assets/uidai_english_logo.37b7e790fc0b23da21bc9df098a66467.svg' %}" alt=""></a>
+    <h1>Unique Identification Authority of India</h1>
+    <img src="{% static '/root_assets/aadhaar_english_logo.9a2d63795a7f7bdd7acb2148585336be.svg' %}" alt="">
+  </nav>
+
+  <nav class="nav_container2 flex">
+    <aside class="left_nav2 flex">
+      <img src="{% static '/root_assets/dashboard.21335c2c89af71912adf700d228cbecd.svg' %}" alt="">
+      <h2>myAadhaar</h2>
+    </aside>
+    <aside class="right_nav2 flex">
+      <img src="{% static '/root_assets/LanguageSelector.dd14b8054218a45a518df6f26aaff418.svg' %}" alt="">
+      <select name="lang" id="land">
+        <option value="eng">English</option>
+        <option value="hin">Hindi</option>
+      </select>
+    </aside>
+  </nav>
+
+  <nav class="nav_container3 flex">
+    <img src="{% static '/root_assets/error_outline.6ce73fae915166a5c626b512787185bd.svg' %}" alt="">
+    <p>Some Aadhaar holders may find incorrect characters in downloaded Aadhaar card from website due to a temporary
+      technical
+      issue. Issue is expected to be fixed soon. Affected users are requested to attempt download once issue is
+      resolved.
+      Inconvenience caused is deeply regretted.</p>
+  </nav>
+</header>
