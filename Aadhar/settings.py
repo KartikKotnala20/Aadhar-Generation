@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-mtoghj^_s73*z-14ud%e)o2#tl==4!(lbna5ru)e%2!-(g*o&$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['aadhar-generation.onrender.com']
+ALLOWED_HOSTS = ['aadhargeneration.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
