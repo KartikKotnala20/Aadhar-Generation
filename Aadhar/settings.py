@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-mtoghj^_s73*z-14ud%e)o2#tl==4!(lbna5ru)e%2!-(g*o&$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aadhar-generation.onrender.com']
 
 
 # Application definition
@@ -116,6 +116,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
